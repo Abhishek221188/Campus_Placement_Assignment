@@ -56,4 +56,4 @@ This model combines the strengths of all the individual models, leading to bette
 
 Conclusion
 By using various machine learning models and combining them with a Voting Classifier, I was able to accurately predict whether students would be placed in campus placements. This approach can help educational institutions improve their placement strategies and assist students in securing jobs.
-The complete project, including the code and report, has been uploaded to GitHub. You can find it [here](your-github-link).
+
