@@ -13,7 +13,7 @@ gender, work experience, and whether they were placed or not. Each row in the da
 Preprocessing Steps
 
 1. Loading the Data: loaded the dataset to start our analysis.
-2. Handling Missing Values**: found some missing values in the salary column and filled them with 0 because students who were not placed would not have a salary.
+2. Handling Missing Values: found some missing values in the salary column and filled them with 0 because students who were not placed would not have a salary.
 3. Encoding Categorical Data: converted categorical data (like gender, education background, etc.) into numbers so that machine learning models can process them.
 4. Splitting the Data: divided the dataset into two parts: 70% for training our models and 30% for testing their performance.
 
