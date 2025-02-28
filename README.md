@@ -1,59 +1,71 @@
-Campus Placement Prediction Project Report
+Campus Placement Prediction
 
-Introduction
+🔹 Introduction
 
-Getting students placed in good jobs is one of the most important goals for any educational institution. 
-The reputation and yearly admissions of a college or university depend a lot on how well they can place their students in jobs. 
-This project aims to predict whether a student will be recruited during campus placements or not, based on various factors like academic performance, work experience, and other attributes.
+📌 Problem Summary
 
-Dataset and Preprocessing
-The dataset used for this project is available on Kaggle and includes information about students' academic scores, 
-gender, work experience, and whether they were placed or not. Each row in the dataset represents a student.
+Securing student placements is crucial for educational institutions as it impacts their reputation and admissions. This project predicts whether a student will be placed based on academic performance, work experience, and other factors.
 
-Preprocessing Steps
+🎯 Dataset & Preprocessing
 
-1. Loading the Data: loaded the dataset to start our analysis.
-2. Handling Missing Values: found some missing values in the salary column and filled them with 0 because students who were not placed would not have a salary.
-3. Encoding Categorical Data: converted categorical data (like gender, education background, etc.) into numbers so that machine learning models can process them.
-4. Splitting the Data: divided the dataset into two parts: 70% for training our models and 30% for testing their performance.
+Dataset: Sourced from Kaggle, it includes academic scores, gender, work experience, and placement status.
 
-Chosen Models and Rationale
+Preprocessing Steps:
 
-Selected a variety of machine learning models to see which one works best for predicting placements:
+Data Loading: Imported the dataset for analysis.
 
-1. Logistic Regression: This model is simple and good for binary classification tasks (like predicting yes or no).
-2. Decision Tree Classifier: This model is easy to understand and visualize.
-3. Random Forest Classifier: This model uses multiple decision trees to improve accuracy and prevent overfitting.
-4. Support Vector Machine (SVM): This model is effective in high-dimensional spaces and good for classification.
-5. k-Nearest Neighbors (k-NN): This model is simple and effective for small datasets.
-6. Gradient Boosting Classifier: This model builds trees sequentially to improve accuracy.
+Handling Missing Values: Filled missing salary values with 0 for unplaced students.
 
-Training the Models
+Encoding Categorical Data: Converted categorical variables into numerical format.
 
-Trained each of these models on our training data. During training, we adjusted various settings (hyperparameters) for each model to make them perform better.
+Data Splitting: 70% for training, 30% for testing.
 
-Evaluating the Models
-Evaluated how well each model performed on the test data using several metrics:
+📌 Chosen Models & Rationale
 
-- Accuracy: The percentage of correct predictions.
-- Precision: How many of the predicted placements were actually correct.
-- Recall: How many of the actual placements were correctly predicted.
-- F1-Score: A balance between precision and recall.
-- ROC-AUC: Measures the model's ability to distinguish between the classes.
+Logistic Regression: Ideal for binary classification.
 
-also used confusion matrices to visualize the performance of each model.
+Decision Tree Classifier: Simple and interpretable.
 
-voting Classifier
-To further improve our predictions, we created a Voting Classifier. This classifier combines the predictions of all the models we trained. 
-By taking the "vote" of each model, the Voting Classifier often performs better than individual models.
+Random Forest Classifier: Improves accuracy with multiple trees.
 
-Confusion Matrices
-Plotted confusion matrices for each model to see how well they are predicting placements and non-placements.
+Support Vector Machine (SVM): Effective in high-dimensional spaces.
 
-Best Performing Model
-The Voting Classifier performed the best with an accuracy of 90%, precision of 91%, recall of 89%, F1-score of 90%, and ROC-AUC of 94%.
-This model combines the strengths of all the individual models, leading to better overall performance.
+k-Nearest Neighbors (k-NN): Works well with small datasets.
 
-Conclusion
-By using various machine learning models and combining them with a Voting Classifier, I was able to accurately predict whether students would be placed in campus placements. This approach can help educational institutions improve their placement strategies and assist students in securing jobs.
+Gradient Boosting Classifier: Enhances accuracy through sequential learning.
 
+🔹 Model Training & Evaluation
+
+Trained each model on the dataset and optimized hyperparameters.
+
+Evaluation Metrics:
+
+Accuracy – Overall correctness of predictions.
+
+Precision – Proportion of correct placement predictions.
+
+Recall – Correctly identified placed students.
+
+F1-Score – Balance between precision and recall.
+
+ROC-AUC – Measures classification performance.
+
+Used confusion matrices to visualize model performance.
+
+🏆 Best Performing Model
+
+The Voting Classifier achieved the highest accuracy of 90%, with:
+
+Precision: 91%
+
+Recall: 89%
+
+F1-Score: 90%
+
+ROC-AUC: 94%
+
+This ensemble model combined multiple classifiers to improve prediction reliability.
+
+📌 Conclusion
+
+By leveraging machine learning models, this project accurately predicts student placements. The insights gained can help institutions enhance their placement strategies, ultimately increasing job opportunities for students.
